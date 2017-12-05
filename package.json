@@ -1,0 +1,15 @@
+{
+  "name": "@crimson-education/hapi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "debug": "node --inspect-brk server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Zhe Wang",
+  "license": "ISC",
+  "dependencies": {
+    "hapi": "^17.1.1"
+  }
+}
