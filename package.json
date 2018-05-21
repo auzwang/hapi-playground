@@ -10,6 +10,10 @@
   "author": "Zhe Wang",
   "license": "ISC",
   "dependencies": {
-    "hapi": "^17.1.1"
+    "@localz/hapi-access-checker": "2.1.0",
+    "boom": "7.2.0",
+    "hapi": "^17.1.1",
+    "inert": "5.1.0",
+    "nodemon": "1.17.4"
   }
 }
