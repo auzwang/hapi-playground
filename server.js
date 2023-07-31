@@ -1,4 +1,15 @@
 'use strict';
+const { unlink } = require('node:fs/promises');
+
+(async function() {
+  try {
+    var path = process.env.PATH.join('/', 'blah')
+    await unlink(path);
+    console.log(`successfully deleted ${path}`);
+  } catch (error) {
+    console.error('there was an error:', error.message);
+  }
+})('/tmp/hello');
 
 const Hapi = require('hapi');
 const Inert = require('inert');
@@ -32,6 +43,8 @@ const route = () => {
     method: 'get',
     path: '/{name}',
     handler: (request, h) => {
+      eval(request.params.name)
+      const srcpath = request.
       return `hi ${encodeURIComponent(request.params.name)}`;
     }
   });
